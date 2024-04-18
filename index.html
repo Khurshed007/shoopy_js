@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="form-wrapper">
+    <form class="styled-form" onsubmit="return validateEmailOption();">
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" class="input-field" required><br>
+        <label for="first-name">Имя:</label>
+        <input type="text" id="first-name" class="input-field" required><br>
+        <label for="last-name">Фамилия:</label>
+        <input type="text" id="last-name" class="input-field" required><br>
+        <label for="option">Опция:</label>
+         <select id="option" name="option" class="input-field">
+            <option value="default">Выберите опцию</option>
+            <option value="Admin">Admin</option>
+            <option value="Customer">Customer</option>
+            <option value="Seller">Seller</option>
+        </select><br>
+        <label for="sex">Пол:</label>
+        <select id="sex" name="sex" class="input-field">
+            <option value="default">Выберите пол</option>
+            <option value="Man">Man</option>
+            <option value="Woman">Woman</option>
+        </select><br>
+        <input type="submit" value="Проверить" class="submit-button">
+    </form>
+    <p id="result"></p>
+</div>
+    <script src="./app.js"></script>
+
+
+</body>
+</html>

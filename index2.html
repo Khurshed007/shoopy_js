@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <nav>
+        <div class="logo">
+            <h3><span>S</span>HOPY</h3>
+        </div>
+        <div class="greeting mobile-none">
+            <p>Hello </p>
+        </div>
+
+        <div class="check">
+<input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label mobile-none">
+      <i class="bx bx-moon"></i>
+      <i class="bx bx-sun"></i>
+      <span class="ball"></span>
+    </label>
+    <ul class="menu mobile-none">
+      <li class="change"><i class="fas fa-pencil-alt"></i></li>
+  </ul>
+    <div class="cart mobile-none">
+      <span class="count">1</span>
+      <i class="fas fa-shopping-cart "></i>
+    </div>
+   
+    <div class="exit mobile-none"><i class="fas fa-sign-out-alt"></i></div>
+    <div class="hamburger">
+      <span class="strike_1">
+       </span>
+      <span class="strike_2">
+       </span>
+      <span class="strike_3">
+       </span>
+    </div> 
+</div>
+<div class="nav-ul_menu">
+  <div class="menu-block no-border">
+    <div class="greeting">
+      <p>Hello </p>
+  </div>
+  </div>
+  <div class="menu-block"><div class="search-container">
+    <div class="search-content">
+     <span><i class="fas fa-search"></i></span>
+     <input type="text" class ="elastic" placeholder="Search for anything">
+   </div>
+   <button class="v-btn">Search</button>
+ </div></div>
+  <div class="menu-block">
+      <p class="change">Change</p>
+  </div>
+  <div class="menu-block"><div class="exit">Exit</div></div>
+  <div class="menu-block">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label ">
+    <i class="bx bx-moon"></i>
+    <i class="bx bx-sun"></i>
+    <span class="ball"></span>
+  </label></div>
+  <div class="menu-block">
+    <div class="accordion-category">
+      <div class="acc_item">    <span class="accordion-button" onclick="toggleCategory('category')">Categories</span></div>
+      <div class="accordion-content" id="category">
+      <div class="acc_item"> <div class="item_category" data-category="all">All</div></div>
+      <div class="acc_item"> <div class="item_category" data-category="Sneakers">Sneakers</div></div>
+      <div class="acc_item"> <div class="item_category" data-category="Jeans">Jeans</div></div>
+      <div class="acc_item"> <div class="item_category" data-category="Shirts">Shirts</div></div>
+        <div class="acc_item"> <div class="item_category" data-category="Jackets">Jackets</div></div>
+        <div class="acc_item"> <div class="item_category" data-category="Pullover">Pullover</div></div>
+      </div>
+  </div>
+    
+  </div>
+  
+</div>
+
+</div>
+
+
+
+    </nav>
+
+
+    <section class="side_padding">
+      <div class="cart display-none">
+        <span class="count">1</span>
+        <i class="fas fa-shopping-cart "></i>
+      </div>
+      <div class="container box-container">
+        <div class="box-container-content">
+           <div class="box-container-content-item-img">
+    
+            
+           </div>
+           <div class="box-container-content-item-details">
+    
+          </div>
+          <span>X</span>
+        </div>
+   </div>
+
+    <div class="product-editor">
+        <div class="header">
+            <span class="close-button">&#10006;</span>
+        </div>
+        <div class="content">
+            <h2>Edit Product</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                
+                <label for="categories">Category:</label>
+                <select id="categories" name="categories">
+                    <option value="all">All</option>
+                    <option value="Sneakers" selected>Sneakers</option>
+                    <option value="Jeans">Jeans</option>
+                    <option value="Pullover">Pullover</option>
+                    <option value="Shirts">Shirts</option>
+                    <option value="Jackets">Jackets</option>
+                </select>
+                <select id="sex" name="sex">
+                    <option value="man">Man</option>
+                    <option value="woman" selected>Woman</option>
+                </select>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+            
+                <label for="photo">Photo:</label>
+                <input type="text" class="photo" name="photo"  required>
+                 <input type="text" class="photo" name="photo" required >
+                 <input type="text" class="photo" name="photo"  required>
+
+                <label for="details">Product Detail:</label>
+                <textarea type="text" id="product-detail" name="product-detail"  required></textarea>
+                
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+ 
+    <div class="search-container mobile-none">
+      <div class="search-content">
+       <span><i class="fas fa-search"></i></span>
+       <input type="text" class="elastic" placeholder="Search for anything">
+     </div>
+     <button class="v-btn">Search</button>
+   </div>
+
+        <div class="sidebar-carousel-wrapper">
+       <div class="sidebar-carousel-category ">
+        <div class="sidebar mobile-none">
+            <div class="sidebar-title">
+              <h2>Categories</h2>
+            </div>
+          <div class="category">
+              <div class="item_category" data-category="all">All</div>
+              <div class="item_category" data-category="Sneakers">Sneakers</div>
+              <div class="item_category" data-category="Jeans">Jeans</div>
+              <div class="item_category" data-category="Shirts">Shirts</div>
+              <div class="item_category" data-category="Jackets">Jackets</div>
+              <div class="item_category" data-category="Pullover">Pullover</div>
+              <div class="option_preference">
+                <select name="" id="sex_option">
+                    <option value="both">both</option>
+                    <option value="man">man</option>
+                    <option value="woman">woman</option>
+                </select>
+              </div>
+          </div>
+       </div>
+        <div class="carousel-wrapper">
+        <button class="prev"></button>   
+          
+         <div class="carousel-content">
+       
+            <div class="items">
+              <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a64882b221ee4287b643b4f8c0409d06_9366/Midweight_Daunenjacke_Rot_IR7132_21_model.jpg" /></div>
+            <div class="items">
+              <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/017cb46d-0f12-45c9-833c-0ef00b868f85/air-alpha-force-88-herrenschuh-DBbM4L.png" /></div>
+            <div class="items">
+              <img src="https://dfcdn.defacto.com.tr/6/A7008AX_23AU_NM40_04_03.jpg" /></div>
+            <div class="items">
+              <img src="https://dfcdn.defacto.com.tr/6/R1124AZ_23WN_BK27_06_01.jpg" /></div>
+         </div>
+         <button class="next"></button>
+         
+          <div class="circle_item">
+
+          </div>
+
+        </div>
+        </div>
+           <div class="finded-content">
+          </div> 
+      </div>
+       
+
+
+        <section class="container title_container">
+            <div class="content cart_content">
+               <div class="title">
+                <h1>Trends</h1>
+               </div>
+          
+            </div>
+             <div class="goods">
+             </div>
+             <div class="pagination num">
+              <ul>
+    
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        
+     
+
+        <section class="container mail_container">
+            <div class="content mail_content">
+              
+              <span>X</span>
+            
+            <div class="title">
+                <h1>Your Order</h1>
+            </div>
+            <div class="mail_cont">
+            
+                  <div class="cart_box">
+                     <div class = cart_item>
+                         <img src="./ogG_rAb0qGw.jpg" alt="">
+                             <h1>Title</h1>
+                      </div>
+                  <div class="cart_item_quantity">
+                    <button>+</button>
+                       <p>Count</p>
+                    <button>-</button>
+                       <p>price</p>
+                  </div>
+                    </div>
+  
+        
+        
+            </div>
+             <div class="delivery_box">
+             <div class="title">
+              <h1>Delivery</h1>
+            </div>
+            <div class="valid">
+              <div class="contact-info">
+                <input type="text" name="mail" placeholder="Email"  />
+                <input type="text" name="telefon" placeholder="Telephone" />
+                <input type="text" name="address" placeholder="Address"  />
+              </div>
+              <input class="name-input" type="text" name="name" placeholder="Name"  />
+            </div>
+            
+               <div class="delivery_order">
+                <div class="delivery_order_price">65</div>
+                <div class="delivery_order_accept">Order</div>
+               </div>
+         </div>
+                  
+               </div>
+             </div>
+            
+            </div>  
+            
+          </section>
+
+
+          <section>
+          
+
+          </section>
+      
+          <footer>
+            <div class="footer-container container">
+               <div class="footer-content">
+               <div class="footer-item">
+                 <strong>About Us</strong>
+                 <p>We always think about buyer niches, listen to them and correct ourselves thanks to the feedback!</p>
+      
+               </div>
+      
+                <div class="footer-item">
+                 <strong>Company</strong>
+                 <ul>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Terms & Condition</a></li>
+                   <li><a href="#">Latest Blogs</a></li>
+                   <li><a href="#">App Service</a></li>
+                   
+                 </ul>
+               </div>
+               
+      
+                  <div class="footer-item">
+                 <strong>Social Pages</strong>
+                 <ul>
+                   <li><a href="#">Facebook</a></li>
+                   <li><a href="#">Twitter</a></li>
+                   <li><a href="#">Instagram</a></li>
+                   <li><a href="#">Linkedin</a></li>
+                   
+                 </ul>
+               </div>
+              </div>
+               <div class="copyright main-margin">
+                 <hr>
+              <div class="copyright-text align-center">
+                   <p></p>
+              </div>
+               </div>	
+            </div>
+         </footer>
+
+    <script src="app2.js"></script>
+    
+</body>
+</html>
